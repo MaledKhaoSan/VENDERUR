@@ -58,7 +58,7 @@ let columns3Scrolling = gsap.timeline({
 columns3Scrolling.from(".content-gridcolumns3", 0.9, {y:"80"}, "<");
 columns3Scrolling.from(".content-gridcolumns3", 0.5, {autoAlpha:"0"}, "<");
 
-columns3Scrolling.to(".main-container-columns3", 2, {height: "100px",ease: Power1.easeOut}, "<");
+//columns3Scrolling.to(".main-container-columns3", 2, {height: "100px",ease: Power1.easeOut}, "<");
 
 
 let columns4Scrolling = gsap.timeline({
