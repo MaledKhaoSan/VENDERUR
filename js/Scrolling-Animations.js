@@ -14,7 +14,7 @@ let MainCoverScrolling = gsap.timeline({
 });
 MainCoverScrolling.to(".cover", 3, {ease: Power1.easeOut, y:"85vh"}, "<");
 MainCoverScrolling.to(".cover", 3, {autoAlpha:"0",ease: Power1.easeOut}, "<+0.6");
-//MainCoverScrolling.to(".main-container-columns1", 3, {height: "200px",ease: Power1.easeOut}, "<");
+//
 
 
 
