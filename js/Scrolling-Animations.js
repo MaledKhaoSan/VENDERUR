@@ -4,7 +4,7 @@ let MainCoverScrolling = gsap.timeline({
         start: "%top center",
         end: "150% center",
         // toggleActions: "play complete pause reverse",
-        scrub: "5",
+        scrub: "true",
         toggleActions: "play complete reverse none",
         // markers: {
         //     startColor: "blue",
@@ -12,10 +12,9 @@ let MainCoverScrolling = gsap.timeline({
 
     }
 });
-MainCoverScrolling.to(".cover", 3, {ease: Power1.easeOut, y:"85vh"}, "<");
+MainCoverScrolling.to(".cover", 3, {ease: Power1.easeOut, transform: 'translate3d(0,60vh,0)'}, "<");
 MainCoverScrolling.to(".cover", 3, {autoAlpha:"0",ease: Power1.easeOut}, "<+0.6");
-//
-
+// MainCoverScrolling.to(".main-container-columns1", 3, {height: "200px",ease: Power1.easeOut}, "<");
 
 
 
@@ -45,21 +44,21 @@ columns2Scrolling.from(".Text3-columns2", 2.5, {autoAlpha:"0",ease: Power1.easeO
 let columns3Scrolling = gsap.timeline({
     scrollTrigger: {
         trigger: ".columns3Scrolling",
-        start: "30% bottom",
-        end: "130% center",
+        start: "10% bottom",
+        end: "50% center",
         // toggleActions: "play complete pause reverse",
-        scrub: "3",
+        scrub: "true",
         toggleActions: "play complete reverse none",
-        // markers: {
-        //     startColor: "green",
-        //     endColor: "red"},
+        markers: {
+            startColor: "green",
+            endColor: "red"},
 
     }
 });
 columns3Scrolling.from(".content-gridcolumns3", 0.9, {y:"80"}, "<");
 columns3Scrolling.from(".content-gridcolumns3", 0.5, {autoAlpha:"0"}, "<");
 
-columns3Scrolling.to(".main-container-columns3", 2, {height: "0px",ease: Power1.easeOut}, "<");
+columns3Scrolling.to(".main-container-columns3", 2, {height: "100px",ease: Power1.easeOut}, "<");
 
 
 let columns4Scrolling = gsap.timeline({
