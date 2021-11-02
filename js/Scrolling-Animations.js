@@ -49,9 +49,9 @@ let columns3Scrolling = gsap.timeline({
         // toggleActions: "play complete pause reverse",
         scrub: "true",
         toggleActions: "play complete reverse none",
-        markers: {
-            startColor: "green",
-            endColor: "red"},
+        //markers: {
+        //    startColor: "green",
+        //    endColor: "red"},
 
     }
 });
